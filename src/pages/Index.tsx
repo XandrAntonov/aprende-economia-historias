@@ -70,7 +70,11 @@ const Index = () => {
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <Link to={`/articulos/${article.slug}`}>
-                  <div className="aspect-video bg-gradient-to-br from-primary to-gold rounded-t-lg"></div>
+                  <img 
+                    src={article.image} 
+                    alt={article.title}
+                    className="aspect-video w-full object-cover rounded-t-lg"
+                  />
                   <CardHeader>
                     <div className="flex items-center justify-between text-sm text-economic-muted mb-2">
                       <span className="bg-gold/10 text-gold-dark px-2 py-1 rounded-md font-medium">

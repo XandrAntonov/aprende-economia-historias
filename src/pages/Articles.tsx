@@ -55,9 +55,12 @@ const Articles = () => {
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <Link to={`/articulos/${article.slug}`}>
-                {/* Article Image Placeholder */}
-                <div className="aspect-video bg-gradient-to-br from-primary to-gold rounded-t-lg relative overflow-hidden">
-                  <div className="absolute inset-0 bg-black/20"></div>
+                <div className="relative">
+                  <img 
+                    src={article.image} 
+                    alt={article.title}
+                    className="aspect-video w-full object-cover rounded-t-lg"
+                  />
                   {article.featured && (
                     <Badge className="absolute top-4 left-4 bg-gold text-white">
                       Destacado

@@ -1,3 +1,10 @@
+import inflationImage from "@/assets/article-inflation-2024.jpg";
+import energyImage from "@/assets/article-europe-energy.jpg";
+import digitalImage from "@/assets/article-digital-economy.jpg";
+import historicalImage from "@/assets/article-historical-moments.jpg";
+import tradeImage from "@/assets/article-asia-europe-trade.jpg";
+import migrationImage from "@/assets/article-global-migration.jpg";
+
 export interface Article {
   id: string;
   title: string;
@@ -18,7 +25,7 @@ export const articles: Article[] = [
     title: "Cómo la inflación global cambió los hábitos de consumo en 2024",
     slug: "inflacion-global-habitos-consumo-2024",
     excerpt: "Análisis de cómo el aumento de precios en todo el mundo afectó las decisiones de compra, el ahorro y el estilo de vida de las familias.",
-    image: "/src/assets/article-inflation-2024.jpg",
+    image: inflationImage,
     date: "2024-12-15",
     readTime: "8 min",
     category: "Análisis Económico",
@@ -59,7 +66,7 @@ export const articles: Article[] = [
     title: "Historia de la crisis energética en Europa: lo que realmente pasó",
     slug: "crisis-energetica-europa-historia",
     excerpt: "Un repaso histórico de los factores que llevaron al aumento de precios de la energía y las políticas para fomentar energías renovables.",
-    image: "/src/assets/article-europe-energy.jpg",
+    image: energyImage,
     date: "2024-12-10",
     readTime: "10 min",
     category: "Historia Económica",
@@ -106,7 +113,7 @@ export const articles: Article[] = [
     title: "Economía digital: cómo la tecnología está transformando el comercio mundial",
     slug: "economia-digital-transformacion-comercio-mundial",
     excerpt: "Exploración del impacto de la inteligencia artificial, la automatización y las plataformas digitales en la economía global.",
-    image: "/src/assets/article-digital-economy.jpg",
+    image: digitalImage,
     date: "2024-12-05",
     readTime: "9 min",
     category: "Innovación Económica",
@@ -159,7 +166,7 @@ export const articles: Article[] = [
     title: "Momentos históricos que cambiaron los mercados para siempre",
     slug: "momentos-historicos-mercados-transformacion",
     excerpt: "Un recorrido por eventos clave del último siglo que redefinieron el comercio y las finanzas internacionales.",
-    image: "/src/assets/article-historical-moments.jpg",
+    image: historicalImage,
     date: "2024-11-28",
     readTime: "12 min",
     category: "Historia Económica",
@@ -224,7 +231,7 @@ export const articles: Article[] = [
     title: "Relaciones comerciales entre Asia y Europa: del pasado al presente",
     slug: "relaciones-comerciales-asia-europa-historia",
     excerpt: "De la Ruta de la Seda a la era digital: cómo ha evolucionado el intercambio comercial entre dos potencias económicas.",
-    image: "/src/assets/article-asia-europe-trade.jpg",
+    image: tradeImage,
     date: "2024-11-20",
     readTime: "11 min",
     category: "Comercio Internacional",
@@ -289,7 +296,7 @@ export const articles: Article[] = [
     title: "Migración laboral global: causas y efectos en la economía",
     slug: "migracion-laboral-global-economia",
     excerpt: "Análisis de por qué los trabajadores se desplazan entre países y cómo esto influye en la productividad y el crecimiento económico.",
-    image: "/src/assets/article-global-migration.jpg",
+    image: migrationImage,
     date: "2024-11-15",
     readTime: "10 min",
     category: "Economía Laboral",

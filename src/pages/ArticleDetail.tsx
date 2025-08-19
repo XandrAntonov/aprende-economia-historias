@@ -85,14 +85,11 @@ const ArticleDetail = () => {
           </header>
 
           {/* Article Image */}
-          <div className="aspect-video bg-gradient-to-br from-primary to-gold rounded-lg mb-8 shadow-elegant">
-            <div className="w-full h-full bg-black/20 rounded-lg flex items-center justify-center">
-              <div className="text-white text-center">
-                <h3 className="text-2xl font-playfair font-bold mb-2">{article.title}</h3>
-                <p className="opacity-80">{article.category}</p>
-              </div>
-            </div>
-          </div>
+          <img 
+            src={article.image} 
+            alt={article.title}
+            className="aspect-video w-full object-cover rounded-lg mb-8 shadow-elegant"
+          />
 
           {/* Article Content */}
           <div 
@@ -125,7 +122,11 @@ const ArticleDetail = () => {
               {relatedArticles.map((relatedArticle) => (
                 <div key={relatedArticle.id} className="hover-lift">
                   <Link to={`/articulos/${relatedArticle.slug}`}>
-                    <div className="aspect-video bg-gradient-to-br from-primary to-gold rounded-lg mb-4"></div>
+                    <img 
+                      src={relatedArticle.image} 
+                      alt={relatedArticle.title}
+                      className="aspect-video w-full object-cover rounded-lg mb-4"
+                    />
                     <h3 className="font-playfair font-bold text-primary mb-2 line-clamp-2 hover:text-gold transition-colors">
                       {relatedArticle.title}
                     </h3>
